@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Accessories Shop</title>
 </head>
-<body>
+<body style="background-color: #000000;">
 <main>
     <section>
         <div class="ban" id="banner">
@@ -17,12 +17,12 @@
                 <nav id="lg-nav" class="flex flex-wrap justify-between pt-8 pb-4">
                     <div class="logo-links flex flex-wrap gap-x-14">
                         <div class="logo"><img src="./src/Group 162795.png" alt=""></div>
-                        <div class="links flex flex-wrap  gap-x-5 hidden lg:block md?:block lg:flex md:flex">
-                            <div class="link"><a href="#" class="text-white text-xs">Умный дом</a></div>
-                            <div class="link"><a href="#" class="text-white text-xs">Красота</a></div>
-                            <div class="link"><a href="#" class="text-white text-xs">Бытовая техника</a></div>
-                            <div class="link"><a href="#" class="text-white text-xs">Все товары</a></div>
-                            <div class="link"><a href="#" class="text-white text-xs">Новости</a></div>
+                        <div class="links flex   gap-x-5 hidden lg:block md:block lg:flex md:flex">
+                            <div class="link py-px px-2"><a href="#" class="text-white text-xs">Умный дом</a></div>
+                            <div class="link py-px px-2"><a href="#" class="text-white text-xs">Красота</a></div>
+                            <div class="link py-px px-2"><a href="#" class="text-white text-xs">Бытовая техника</a></div>
+                            <div class="link py-px px-2"><a href="#" class="text-white text-xs">Все товары</a></div>
+                            <div class="link py-px px-2"><a href="#" class="text-white text-xs">Новости</a></div>
                         </div>
                     </div>
                     <div class="icons">
@@ -58,22 +58,229 @@
                 <div class="links flex justify-between text-white text-xl ml-10"><a href="#">Все товары</a></div>
             </div>
             <!-- ================ -->
-             <!-- <div class="grid grid-cols-16 grid-rows-1 ">
-                  <div class="texts cols-start-1 cols-end-14 mt-32 px-14">
-                    <div class="heading font-bold text-8xl overflow-hidden text-white">Фен для<br>волос</div>
-                    <div class="text-white text-xl mt-5">С ионизацией для укладки</div>
-                    <div class="butto mt-5"><button class="border-none text-white text-xs rounded-lg py-4 px-8" style="background-color:#CB4F19;">купить</button></div>
-                  </div>
-                  <div class="image-block col-start-10 col-end-17">
-                    <div class="img"><img src="./src/Ресурс 1@2x 1.png" alt=""></div>
-                  </div>
-             </div> -->
+           
         </div>
      </section>
+     <!-- banner large and middle -->
+     <div class="banner lg:flex md:flex justify-between hidden lg:block md:block" style="height: 100vh;">
+        <div class="banner-txt">
+            <div class="text flex">
+               <div class="ban-text">
+                <div class="heading text-7xl lg:text-8xl font-bold text-white overflow-hidden">
+                    Фен для<br>волос
+                </div>
+                <div class="text-white text-base mt-5">
+                    С ионизацией для укладки
+                </div>
+                <div class="button"><button class="text-white text-xs py-3 px-6 mt-5 rounded-lg" style="background-color: #CB4F19;">купить</button></div>
+               </div>
+               
+            </div>
+        </div>
+        <div class="img-back"><img src="./src/Ресурс 1@2x 1.png" alt=""></div>
+     </div>
+     <!-- ======================== -->
+     <!-- banner -->
+     <div class="banner-mobile items-center flex flex-col  block lg:hidden md:hidden">
+        <div class="text-center ">
+            <div class="heading text-white font-bold text-7xl overflow-hidden">
+                Фен для<br>волос
+            </div>
+            <div class=" text-white text-base mt-5">С ионизацией для укладки</div>
+            <div class="button mt-5"><button class="text-white text-xs py-2 px-6 rounded-lg border-none" style="background-color: #CB4F19;">купить</button></div>
+        </div>
+        <div class="img" style="width: 500px;height: 360px;overflow-y: hidden;">
+            <img src="./src/Ресурс 1@2x 1.png" >
+        </div>
+     </div>
+     <!-- =========== -->
+     <!-- Pop up -->
+    <div class="popup text-center" >
+        <div class="text-right text-white text-3xl buttonclose"><i class="fa-solid fa-x"></i></div>
+       <div class="flex flex-col items-center justify-center">
+        <div class="heading text-white font-bold text-3xl lg:text-6xl md:text-4xl sm:text-4xl overflow-hidden">
+            Зарегистрируся
+        </div>
+        <div class="text-white text-base mt-10">И получи купон на скидку!</div>
+        <div class="registr"><button  class=" text-white text-sm  py-3 px-4 border-none mt-5 rounded-lg" style="background-color: #CB4F19;">зарегистрироваться</button></div>
+       </div>
+    </div>
+    <!-- ============== -->
+    <!-- cokie popup -->
+    <div class="coki flex flex-wrap items-center" id="coki">
+            <div class="text">
+               <div class="text-white text-2xl font-bold">
+                   Мы используем cookie
+               </div>
+               <div class="text-white text-base font-sm mt-10 ">Для повышения удобства работы с сайтом на нем используются файлы cookie. В cookie содержатся данные о ваших прошлых посещениях сайта. Если вы не хотите, чтобы эти данные обрабатывались, отключите cookie в настройках браузера.</div>
+            </div>
+            <div class="button btncok" ><button id="" class="btncok mt-5 rounded-lg text-white text-xl py-3 px-10" style="background-color: #CB4F19;">OK</button></div>
+    </div>
+     <!-- ========== -->
+    <div class="flex flex-rap flex-wrap">
+        <div id="pro" class="flex pl-10 pb-16 items-end">
+                <div class="text">
+                    <div class="heading text-white text-5xl overflow-hidden">Идеи для подарка</div>
+                    <div class="text-white text-xl mt-5">Порадуйте своих близких оригинальным подарком!</div>
+                </div>
+        </div>
+        <div id="komp">
+            <div class="img"><img src="./src/14631.png" alt=""></div>
+            <div class="text">
+                <div class="heading text-white text-3xl font-bold overflow-hidden">Идеи для подарка</div>
+                <div class="text-white text-base  mt-5">Порадуйте своих близких <br>оригинальным подарком!</div>
+            </div>
+        </div>
+    </div>
+    <div class="re grid grid-cols-1 grid-rows-1 lg:grid-cols-3 md">
+        <div class="products flex justify-center items-end px-10 py-20">
+            <div class="text text-center">
+               <div class="heading text-white text-4xl overflow-hidden">
+                   Новинки месяца
+               </div>
+               <div class="text-xl text-white mt-2">Узнайте первым о новых устройствах</div>
+            </div>
+        </div>
+        <div class="products-g overflow-hidden">
+       <div class="img"><img src="./src/81688.png" class="w-full h-full" alt=""></div>
+       <div class="text overflow-hidden">
+           <div class="text-4xl text-white overflow-hidden">
+               MOBI M5s
+           </div>
+           <div class="text-white text-xl">
+               Магия развлечений
+           </div>
+       </div>
+        </div>
+        <div class="products-c flex justify-center items-end px-10 py-20">
+       <div class="text text-center">
+          <div class="heading text-white text-4xl overflow-hidden">
+           Как выбрать фен
+          </div>
+          <div class="text-xl text-white mt-2">На что обратить внимание?</div>
+       </div>
+   </div>
+    </div>
+    <section style="background-color:#000000;">
+    <div class="text flex justify-between px-14 mt-24 items-center">
+        <div class="heading text-white text-2xl lg:text-5xl md:text-5xl sm:text-4xl font-bold overflow-hidden">Популярные товары</div>
+        <div class="click flex"><i class="fa-solid fa-arrow-left text-4xl text-gray-400 hover:text-white mr-5"></i><i class="fa-solid fa-arrow-right text-4xl text-gray-400 hover:text-white"></i></div>
+    </div>
+    <div class="container-scroll  ml-14 mt-10 flex gap-x-5 overflow-x-scroll">
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/resurs.png" alt=""></div>
+            <div class="text   ">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/phone.png" alt=""></div>
+            <div class="text   mt-14">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/resurs.png" alt=""></div>
+            <div class="text   ">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/phone.png" alt=""></div>
+            <div class="text  mt-14 ">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/resurs.png" alt=""></div>
+            <div class="text   ">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+        <div class="blocks rounded-lg" style="background-color: #14191B;padding: 2% 5%;width: 310px ;">
+            <div class="img text-center"><img src="./src/phone.png" alt=""></div>
+            <div class="text  mt-14 ">
+                <div class="heading text-white text-sm mb-5">Фен для волос с ионизацией для укладки</div>
+                <div class="price text-white text-xl inline">10 000 Р</div><span class="inline ml-5 text-sm text-gray-400">12 500 Р</span>
+            </div>
+        </div>
+    </div>
+    </section>
 </main>
+<footer style="background-color: #14191B;padding: 10% 5%;" class=" mt-40 grid grid-cols-1 grid-rows-1 gap-y-5 gap-x-8 lg:grid-grid-rows-1 lg:grid-cols-5 md:grid-grid-rows-1 md:grid-cols-5 sm:grid-grid-rows-1 sm:grid-cols-5">
+ <div class="cols-span-1 rows-span-1 overflow-hidden">
+    <ul class="overflow-hidden">
+        <li class=""><a href="#" class="text-gray-400 text-xl overflow-hidden">о нас</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-sm ">FELFRI</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Контакты</a></li>
+    </ul>
+ </div>
+ <div class="cols-span-1 rows-span-1 overflow-hidden">
+    <ul class="overflow-hidden">
+        <li class=""><a href="#" class="text-white text-xl text-gray-400 ">ресурсы</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-sm ">Новости</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Статьи</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Обзоры</a></li>
+    </ul>
+ </div>
+ <div class="cols-span-1 rows-span-1 overflow-hidden">
+    <ul class="overflow-hidden">
+        <li class=""><a href="#" class="text-gray-400 text-xl overflow-hidden">покупателям</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-sm ">Условия продажи</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Доставка</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Оплата</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Гарантия</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Инструкции</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Сервисные центры</a></li>
+    </ul>
+ </div>
+ <div class="cols-span-1 rows-span-1 overflow-hidden">
+    <ul class="overflow-hidden">
+        <li class=""><a href="#" class="text-gray-400 text-xl overflow-hidden">каталог товаров</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-sm ">Красота и здоровье</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Автотовары</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Аксессуары</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-sm ">Идеи для подарка</a></li>
+    </ul>
+ </div>
+ <div class="cols-span-1 rows-span-1 overflow-hidden">
+    <ul class="overflow-hidden">
+        <li class=""><a href="#" class="text-gray-400 text-xl overflow-hidden">контакты</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-xl ">8 (800) 800-80-80</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-xl ">into@felfri.ru</a></li>
+        <li class="mt-5"><a href="#" class="text-white text-xl ">Пн–Пт: 9:00-20:00 МСК</a></li>
+        <li class="mt-10"><a href="#" class="text-white text-xl "><button class="border border-gray-400 text-white text-xs py-2 px-8 rounded-lg" style="background-color: #14191B;">онлайн-поддержка</button></a></li>
+    </ul>
+    <div class="flex gap-x-5 mt-10">
+        <div>
+            <a href="#"><i class="fa-brands fa-telegram text-4xl border " style="color: #393a3b;border-radius: 50%;"></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa-brands fa-odnoklassniki text-4xl  text-white" ></i></a>
+        </div>
+        <div>
+            <a href="#"><i class="fa-brands fa-square-whatsapp text-4xl  rounded-lg" style="color: #393a3b;"></i></a>
+        </div>
+    </div>
+ </div>
+</footer>
 <script src="./js/main.js"></script>
 </body>
 </html> 
+
+
+
+
+
+
+
+
+
 
 
  

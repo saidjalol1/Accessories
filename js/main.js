@@ -29,3 +29,25 @@ back.addEventListener("click" , back=>{
     
     push.classList.add("hidden")
 })
+
+let popup = document.querySelector(".popup");
+let buttonclose = document.querySelector(".buttonclose");
+let body = document.querySelector("body");
+let cokie = document.querySelector("#coki")
+let btn = document.querySelector(".btncok")
+
+window.onload = function(){
+    setTimeout(function(){
+        popup.style.display = "block"
+    } , 1000)
+}
+ buttonclose.addEventListener("click", (evt) => {
+    popup.style.display = "none";
+    cokie.style.display = "block"
+
+    btn.addEventListener("click" , ()=>{
+        cokie.style.display = "none"
+    })
+ })
+ 
+ 
